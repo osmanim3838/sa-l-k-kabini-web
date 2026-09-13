@@ -31,26 +31,103 @@
 
     <!-- İç Sayfa Navbar -->
     <!-- İç Sayfa Navbar (Logolu Versiyon) -->
-    <nav class="bg-white shadow-sm border-b border-slate-100 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-auto py-3 md:py-4 items-center">
-                
-                <!-- Yeni Logo Alanı -->
-                <a href="index.html" class="flex-shrink-0 flex items-center group py-2">
-                    <img src="logo.png" alt="Hilal Sağlık Kabini Logo" class="h-16 md:h-20 lg:h-24 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
-                </a>
-
-                <!-- Menü Butonları -->
-                <div class="flex items-center gap-4">
-                    <a href="index.html#hizmetler-genel" class="hidden md:block text-slate-600 hover:text-blue-600 font-semibold transition px-4">Tüm Hizmetler</a>
-                    <a href="tel:+905333848222" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-700 transition shadow-lg flex items-center gap-2">
-                        <i class="fa-solid fa-phone"></i> <span class="hidden sm:inline">Bizi Arayın</span>
+  <!-- ==========================================
+         ULTRA-PREMIUM NAVBAR (MENÜ) ALANI
+         ========================================== -->
+    <header class="sticky top-0 z-50 w-full">
+        <!-- Üst Bilgi Barı (Güven ve Kurumsallık Katar) -->
+        <div class="bg-slate-900 text-slate-300 text-xs py-2.5 hidden md:block border-b border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <div class="flex gap-6 font-medium tracking-wide">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-cyan-400"></i> 7/24 Kesintisiz Evde Sağlık</span>
+                    <span class="flex items-center gap-2 text-slate-400">|</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-shield-virus text-cyan-400"></i> %100 Steril ve Güvenli Müdahale</span>
+                </div>
+                <div class="flex gap-4 font-bold">
+                    <a href="https://wa.me/905333848222" target="_blank" class="text-green-400 hover:text-green-300 transition flex items-center gap-1.5">
+                        <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Danışma
                     </a>
                 </div>
-                
             </div>
         </div>
-    </nav>
+
+        <!-- Ana Menü -->
+        <nav class="bg-white/95 backdrop-blur-xl shadow-lg shadow-slate-200/40 border-b border-slate-100 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-2 md:py-3">
+                    
+                    <!-- Logo Alanı -->
+                    <a href="index.html" class="flex-shrink-0 flex items-center group">
+                        <img src="logo3.png" alt="Kayseri Sağlık Hizmetleri Logo" class="h-16 md:h-20 lg:h-[5.5rem] w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-500">
+                    </a>
+
+                    <!-- Menü Linkleri ve Dropdown -->
+                    <div class="hidden lg:flex items-center gap-10">
+                        
+                        <!-- Hizmetlerimiz Dropdown (Açılır Menü) -->
+                        <div class="relative group h-full">
+                            <button class="flex items-center gap-2 text-slate-700 hover:text-blue-700 font-extrabold text-[1.05rem] transition-colors py-6">
+                                Hizmetlerimiz <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300 group-hover:-rotate-180 text-blue-500"></i>
+                            </button>
+                            
+                            <!-- Açılır Menü İçeriği (Cam Efektli ve Gölgeli) -->
+                            <div class="absolute left-1/2 -translate-x-1/2 top-[90%] mt-1 w-[300px] bg-white rounded-2xl shadow-2xl shadow-blue-900/10 border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100 flex flex-col p-3 z-50">
+                                
+                                <a href="ildem-evde-serum.html" class="p-3 text-slate-700 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center gap-4 hover:translate-x-1 group/item">
+                                    <div class="w-10 h-10 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center shadow-inner group-hover/item:bg-cyan-500 group-hover/item:text-white transition-colors"><i class="fa-solid fa-house-medical"></i></div>
+                                    <span class="group-hover/item:text-blue-700">İldem Evde Serum</span>
+                                </a>
+                                
+                                <a href="beyazsehir-evde-serum.html" class="p-3 text-slate-700 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center gap-4 hover:translate-x-1 group/item">
+                                    <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shadow-inner group-hover/item:bg-blue-600 group-hover/item:text-white transition-colors"><i class="fa-solid fa-droplet"></i></div>
+                                    <span class="group-hover/item:text-blue-700">Beyazşehir Evde Serum</span>
+                                </a>
+                                
+                                <a href="bahcelievler-evde-serum.html" class="p-3 text-slate-700 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center gap-4 hover:translate-x-1 group/item">
+                                    <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center shadow-inner group-hover/item:bg-teal-500 group-hover/item:text-white transition-colors"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+                                    <span class="group-hover/item:text-blue-700">Bahçelievler Evde Serum</span>
+                                </a>
+                                
+                                <div class="h-px bg-slate-100 my-1 mx-2"></div> <!-- İnce ayırıcı çizgi -->
+
+                                <a href="pansuman.html" class="p-3 text-slate-700 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center gap-4 hover:translate-x-1 group/item">
+                                    <div class="w-10 h-10 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center shadow-inner group-hover/item:bg-pink-500 group-hover/item:text-white transition-colors"><i class="fa-solid fa-band-aid"></i></div>
+                                    <span class="group-hover/item:text-blue-700">Pansuman & Yara Bakımı</span>
+                                </a>
+
+                                <a href="cerrahi-dikis.html" class="p-3 text-slate-700 hover:bg-blue-50 rounded-xl font-bold transition-all flex items-center gap-4 hover:translate-x-1 group/item">
+                                    <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shadow-inner group-hover/item:bg-indigo-500 group-hover/item:text-white transition-colors"><i class="fa-solid fa-kit-medical"></i></div>
+                                    <span class="group-hover/item:text-blue-700">Cerrahi Dikiş İşlemleri</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="neden-biz.html" class="text-slate-700 hover:text-blue-700 font-extrabold text-[1.05rem] transition-colors py-6">Neden Biz</a>
+                        <a href="iletisim.html" class="text-slate-700 hover:text-blue-700 font-extrabold text-[1.05rem] transition-colors py-6">İletişim</a>
+                    </div>
+
+                    <!-- ÖZEL TASARIM TELEFON BUTONU (Call to Action) -->
+                    <div class="flex items-center ml-4">
+                        <a href="tel:+905333848222" class="relative flex items-center bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 p-1.5 pr-7 rounded-full shadow-xl shadow-blue-900/20 hover:shadow-blue-900/40 transition-all duration-300 hover:-translate-y-1 group border border-slate-700 overflow-hidden">
+                            
+                            <!-- İkon için Nabız (Pulse) Çemberi -->
+                            <div class="relative flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-md z-10 border-2 border-blue-100">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-30"></span>
+                                <i class="fa-solid fa-phone-volume text-blue-700 text-xl group-hover:rotate-12 transition-transform duration-300"></i>
+                            </div>
+                            
+                            <!-- Numara ve Başlık -->
+                            <div class="ml-4 flex flex-col z-10 justify-center">
+                                <span class="text-cyan-400 text-[0.65rem] uppercase tracking-[0.2em] font-black leading-none mb-1 opacity-90">Acil Sağlık Hattı</span>
+                                <span class="text-white font-black text-xl leading-none tracking-wide">0533 384 82 22</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Bölümü -->
     <section class="relative w-full h-[60vh] min-h-[450px] flex items-center justify-center overflow-hidden">
